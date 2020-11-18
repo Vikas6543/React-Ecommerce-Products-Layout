@@ -15,14 +15,19 @@ const Products = () => {
               key={product._id}
               className='home-products col-lg-4 col-md-6 pb-4'
             >
-              <Link style={{textDecoration: 'none'}} to={`/products/${product._id}`}>
+              <Link
+                style={{ textDecoration: "none" }}
+                to={`/products/${product._id}`}
+              >
                 <h5 className='text-center py-3 text-info'>{product.name}</h5>
-                <img className='img-fluid home-image' src={product.image} alt='products' />
+                <img
+                  className='img-fluid home-image'
+                  src={product.image}
+                  alt='products'
+                />
+                <h6 className='buy-now'>Buy Now</h6>
               </Link>
-              <h6 className='buy-now'>Buy Now</h6>
             </section>
-            
-
           ))}
         </div>
       </div>
